@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1a1d20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 50px;
+}
+
+.divImage {
+    position: relative;
+    /* Permite que los elementos hijos con "absolute" se posicionen sobre él */
+}
+
+.imagen {
+    width: 100%;
+    max-height: 800px;
+    /* La altura máxima que puede tener */
+    object-fit: cover;
+    filter: brightness(50%);
+    /* Reduce el brillo sin perder detalles */
+}
+
+.imageParrafo {
+    position: absolute;
+    top: 50%;
+    /* Centrado verticalmente */
+    left: 50%;
+    /* Centrado horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajuste fino para centrarlo completamente */
+    color: white;
+    /* Texto en blanco para contraste */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para mejor legibilidad */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+
+}
+
+.parrafoImgOffice {
+    top: 10%;
+    right: 50%;
+    font-size: 1.5em;
+}
+
+.imgOffice {
+    max-width: 70%;
+    border-radius: 25px;
+    top: 10%;
+    /* Centrado verticalmente */
+    left: 70%;
+    /* Centrado horizontalmente */
+    object-fit: cover;
+    transition: box-shadow 0.5s ease-in-out;
+    /* Transición suave */
+}
+
+.shadow-effect {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+    /* Sombra negra */
+}
