@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #1a1d20;
 }
 
 #footer {
@@ -79,12 +80,12 @@ body {
 }
 
 .contactForm {
-    top: 30%;
+    top: 10%;
 
 }
 
 .bannerContact {
-    top: 30%;
+    top: 10%;
 }
 
 .imgContract {
@@ -98,3 +99,54 @@ body {
     transition: box-shadow 0.5s ease-in-out;
     /* Transición suave */
 }
+
+
+/*css de prueba */
+.image-container {
+    position: relative;
+    /* Referencia para el texto superpuesto */
+    width: 100%;
+}
+
+.image-container img {
+    display: block;
+    /* Evita el comportamiento inline */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bold;
+    width: 80%;
+    max-width: 90%;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .text-overlay {
+        font-size: 4vw;
+        padding: 15px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        font-size: 5vw;
+        padding: 20px;
+        width: 95%;
+    }
+}
+
+
+/* fin de css de prueba*/
