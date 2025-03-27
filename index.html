@@ -23,7 +23,7 @@
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#aboutUs">About Us</a></li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-success">Contact Us</button>
+                        <a class="btn btn-outline-success" href="#contactUs">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -57,7 +57,7 @@
     </div>
 
     <!-- Contact Form -->
-    <div class="container my-5">
+    <div id="contactUs" class="container my-5">
         <div class="row g-4">
             <div class="col-md-6">
                 <img src="./images/contract.webp" class="img-fluid rounded" alt="Contract">
@@ -77,6 +77,11 @@
                         <label for="phone" class="form-label">Phone Number</label>
                         <input type="tel" class="form-control" id="phone">
                     </div>
+                    <div class=" mb-3">
+                        <label class="input-group-text" for="inputGroupFile01">Upload your CV</label>
+                        <input type="file" class="form-control" id="uploadCv">
+                    </div>
+
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="terms" required>
                         <label class="form-check-label" for="terms">Accept Terms and Conditions</label>
